@@ -1,7 +1,7 @@
 Options -MultiViews
 RewriteEngine On
-RewriteBase /mr-tracker/
+RewriteBase /
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /mr-tracker/index.html [L]
+RewriteRule . /index.html [L]

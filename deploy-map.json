@@ -8,9 +8,9 @@
       "build_cmd": "npm run build",
       "build_base": "ui",
       "output_dir": "ui/dist",
-      "public_url": "https://mr-tracker-sapienoids.netlify.app",
-      "status": "pending-deploy",
-      "notes": "Connect testops_mr-tracker GitHub repo to Netlify. Base dir: ui, build: npm run build, publish: dist. Set VITE_APPS_SCRIPT_URL in Netlify env vars."
+      "public_url": "https://inspiring-genie-016265.netlify.app",
+      "status": "deployed",
+      "notes": "Live on Netlify. Auto-deploys on push to master. Rename site in Netlify → Site settings → General → Change site name for a cleaner URL."
     },
     {
       "folder": "backend",

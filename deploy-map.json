@@ -4,13 +4,13 @@
   "components": [
     {
       "folder": "ui",
-      "host": "hostinger",
-      "build_cmd": "cd ui && npm ci && npm run build",
+      "host": "netlify",
+      "build_cmd": "npm run build",
+      "build_base": "ui",
       "output_dir": "ui/dist",
-      "deploy_path": "subdomains/mr-tracker/",
-      "public_url": "https://mr-tracker.sapienoids.com",
+      "public_url": "https://mr-tracker-sapienoids.netlify.app",
       "status": "pending-deploy",
-      "notes": "Create subdomain mr-tracker.sapienoids.com in hPanel → Domains → Subdomains, then upload dist/ contents to its root folder. .htaccess in dist/ handles React Router SPA routing."
+      "notes": "Connect testops_mr-tracker GitHub repo to Netlify. Base dir: ui, build: npm run build, publish: dist. Set VITE_APPS_SCRIPT_URL in Netlify env vars."
     },
     {
       "folder": "backend",

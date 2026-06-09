@@ -1,0 +1,28 @@
+{
+  "project": "testops_mr-tracker",
+  "source": "P:/RZpharma sample/mr-tracker",
+  "components": [
+    {
+      "folder": "ui",
+      "host": "hostinger",
+      "build_cmd": "cd ui && npm ci && npm run build",
+      "output_dir": "ui/dist",
+      "deploy_path": "public_html/mr-tracker/",
+      "public_url": null,
+      "status": "pending-deploy",
+      "notes": "Upload dist/ contents to public_html/mr-tracker/ via hPanel File Manager. .htaccess is included in dist/ via public/.htaccess for React Router SPA support."
+    },
+    {
+      "folder": "backend",
+      "host": "google-apps-script",
+      "public_url": "https://script.google.com/macros/s/AKfycbxQ7HIztpGnAWRmhbTRvi-jFBOIChfZshH7fkTaBg81LDaDLfgmfXTOw5kqRJMWqMQ/exec",
+      "status": "deployed",
+      "notes": "Code.gs is reference copy only — managed in Google Apps Script IDE. Not deployed from this repo."
+    }
+  ],
+  "shared_services": {
+    "llm_gateway": null,
+    "tts": null
+  },
+  "notes": "No LLM, no TTS. Pure React PWA + Google Apps Script backend."
+}

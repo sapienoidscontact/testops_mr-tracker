@@ -14,8 +14,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icons/*.png', '*.svg'],
       manifest: {
-        name: 'MR Tracker',
-        short_name: 'MR Tracker',
+        name: 'M R Tracker',
+        short_name: 'M R Tracker',
         description: 'Medical Representative field visit tracker — offline-first PWA',
         theme_color: '#16a34a',
         background_color: '#ffffff',

@@ -88,7 +88,7 @@ export default function Login() {
         {/* Logo */}
         <div className="text-center mb-8">
           <div className="text-6xl mb-3">💊</div>
-          <h1 className="text-3xl font-extrabold text-white tracking-tight">MR Tracker</h1>
+          <h1 className="text-3xl font-extrabold text-white tracking-tight">M R Tracker</h1>
           <p className="text-green-200 mt-1 text-sm">Field Visit Management</p>
         </div>
 
@@ -167,7 +167,7 @@ export default function Login() {
         </button>
 
         <p className="text-center text-green-300 text-xs mt-3">
-          MR Tracker v1.0.0 · Contact your manager for credentials
+          M R Tracker v1.0.0 · Contact your manager for credentials
         </p>
       </div>
     </div>

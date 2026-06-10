@@ -107,7 +107,7 @@ export default function Home() {
       if (!lastArrived) return;
       const msSinceLast = Date.now() - new Date(lastArrived.timestamp_iso).getTime();
       if (msSinceLast > REMINDER_MS && Notification.permission === 'granted') {
-        new Notification('MR Tracker Reminder', {
+        new Notification('M R Tracker Reminder', {
           body: `You've been at ${lastArrived.clinic_name || 'a location'} for over 30 minutes. Did you forget to log your visit?`,
           icon: '/icons/icon-192.png'
         });
@@ -251,7 +251,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-green-600 dark:bg-green-900 text-white px-4 py-3 flex items-center justify-between shadow-md sticky top-0 z-10">
         <div>
-          <h1 className="text-lg font-bold">MR Tracker</h1>
+          <h1 className="text-lg font-bold">M R Tracker</h1>
           <p className="text-xs text-green-200">{auth?.mr_name || auth?.mr_id}</p>
         </div>
         <div className="flex items-center gap-3">

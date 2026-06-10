@@ -116,7 +116,7 @@ export default function SignUp() {
         <div className="text-center mb-6">
           <div className="text-5xl mb-2">📋</div>
           <h1 className="text-2xl font-extrabold text-white">Create Account</h1>
-          <p className="text-green-200 text-sm mt-1">MR Tracker — New Registration</p>
+          <p className="text-green-200 text-sm mt-1">M R Tracker — New Registration</p>
         </div>
 
         <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-6 space-y-4">

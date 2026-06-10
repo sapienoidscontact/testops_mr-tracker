@@ -57,7 +57,7 @@ export default function DailySummary() {
   const cities = [...new Set(arrivals.map(v => v.city).filter(Boolean))];
 
   const shareText = [
-    `📊 MR Tracker — Daily Summary (${new Date().toLocaleDateString('en-IN')})`,
+    `📊 M R Tracker — Daily Summary (${new Date().toLocaleDateString('en-IN')})`,
     `👨‍⚕️ Total Visits: ${arrivals.length}`,
     `⏱ Field Time: ${formatMs(fieldMs)}`,
     `💰 Total Orders: ₹${totalOrder}`,
@@ -68,7 +68,7 @@ export default function DailySummary() {
 
   const handleShare = async () => {
     if (navigator.share) {
-      try { await navigator.share({ title: 'MR Tracker Summary', text: shareText }); }
+      try { await navigator.share({ title: 'M R Tracker Summary', text: shareText }); }
       catch (_) {}
     } else {
       try { await navigator.clipboard.writeText(shareText); alert('Summary copied to clipboard!'); }

@@ -5,6 +5,7 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  VITE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxQ7HIztpGnAWRmhbTRvi-jFBOIChfZshH7fkTaBg81LDaDLfgmfXTOw5kqRJMWqMQ/exec"
 
 [[headers]]
   for = "/*"
